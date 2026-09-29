@@ -33,6 +33,7 @@ func main() {
 	apikey := os.Getenv("ARK_API_KEY")
 
 	ctx := context.Background()
+
 	client, err := cozeloop.NewClient()
 	if err != nil {
 		log.Fatal(err)
