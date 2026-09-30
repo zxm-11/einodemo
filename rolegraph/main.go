@@ -46,7 +46,7 @@ func main() {
 	//注册graph
 	outsideGraph := compose.NewGraph[map[string]string, string]()
 	outlambda1 := compose.InvokableLambda(func(ctx context.Context, input map[string]string) (output map[string]string, err error) {
-		//直接饭返回输出
+		//直接返回输出
 		return input, nil
 	})
 
